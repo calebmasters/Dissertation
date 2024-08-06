@@ -1,0 +1,45 @@
+<View>
+  <View style="display: flex; flex-direction: row;">
+    <Text name="speech_text" value="$text" style="flex: 1;"/>
+    <View style="flex: 1; margin-left: 20px;">
+      <Labels name="narrative_type" toName="speech_text">
+        <Label value="Green-Growth Narrative"/>
+      </Labels>
+      <View style="display: flex; flex-direction: column;" visibleWhen="$narrative_type">
+        <Choices name="scope_choice" toName="speech_text" perRegion="true">
+          <Choice value="Regional"/>
+          <Choice value="Domestic"/>
+          <Choice value="International"/>
+          <Choice value="Undefined"/>
+        </Choices>
+          <Header value="Region description" perRegion="true" visibleWhen="${scope_choice}.choice === 'Regional'"/>
+          <TextArea name="region_description" toName="speech_text" editable="true" placeholder="Enter the specific region here" perRegion="true" visibleWhen="${scope_choice}.choice === 'Regional'"/>
+          <Header value="inclusion principle" perRegion="true"/>
+          <TextArea name="inclusion_principle_input" toName="speech_text" perRegion="true" editable="true" placeholder="Type a new inclusion principle here"/>
+        <Choices name="document_referenced" toName="speech_text" perRegion="true">
+          <Choice value="Yes"/>
+        </Choices>
+          <TextArea name="document_details" toName="speech_text" editable="true" placeholder="Specify the document" perRegion="true" visibleWhen="${document_referenced}.selectedChoices.some(c =&gt; c.value === 'Yes')"/>
+      </View>
+      <!-- New Section for Marking Speech to be Omitted -->
+      <View>
+        <Header value="Mark Speech for Omission"/>
+        <Choices name="omit_speech" toName="speech_text" choice="single" showInline="true">
+          <Choice value="Omit"/>
+        </Choices>
+        <TextArea name="omission_reason" toName="speech_text" editable="true" placeholder="Enter reason for omission" visibleWhen="${omit_speech}.selectedChoices.some(c =&gt; c.value === 'Omit')"/>
+      </View>
+        <View style="flex-direction: column; margin-left: 25px;">
+        <Header value="Metadata" style="margin-bottom: 10px;"/>
+        <Text name="country_meta" value="$Country" style="margin-bottom: 5px;"/>
+        <Text name="language_meta" value="$Organisation" style="margin-bottom: 5px;"/>
+        <Text name="event_meta" value="$Event" style="margin-bottom: 5px;"/>
+        <Text name="part_event_meta" value="$Part_of_Event" style="margin-bottom: 5px;"/>
+        <Text name="date_meta" value="$classification" style="margin-bottom: 5px;"/>
+        <Text name="info_meta" value="$info" style="margin-bottom: 5px;"/>
+        <Text name="speech_name_meta" value="$Date" style="margin-bottom: 5px;"/>
+        <Text name="org_speaker_meta" value="$Language" style="margin-bottom: 5px;"/>
+      </View>
+    </View>
+  </View>
+</View>
