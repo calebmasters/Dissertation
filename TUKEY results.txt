@@ -1,0 +1,67 @@
+Tukey HSD Test for HDI by Themes
+                  Multiple Comparison of Means - Tukey HSD, FWER=0.05                   
+========================================================================================
+         group1                   group2          meandiff p-adj   lower   upper  reject
+----------------------------------------------------------------------------------------
+   Green-Growth Critical               Non-Growth    0.003    1.0 -0.0695  0.0755  False
+   Green-Growth Critical     Strong International   0.1145 0.0058   0.022  0.2069   True
+   Green-Growth Critical Strong Regional/Domestic   0.0218 0.9755 -0.0614   0.105  False
+   Green-Growth Critical       Weak International   0.0339 0.8762 -0.0533  0.1212  False
+   Green-Growth Critical   Weak Regional/Domestic  -0.0297 0.9214 -0.1155  0.0561  False
+              Non-Growth     Strong International   0.1115 0.0001  0.0418  0.1811   True
+              Non-Growth Strong Regional/Domestic   0.0188 0.9343 -0.0381  0.0757  False
+              Non-Growth       Weak International   0.0309 0.7194 -0.0317  0.0936  False
+              Non-Growth   Weak Regional/Domestic  -0.0327 0.6373 -0.0933  0.0279  False
+    Strong International Strong Regional/Domestic  -0.0927 0.0139 -0.1734 -0.0119   True
+    Strong International       Weak International  -0.0805 0.0744 -0.1654  0.0044  False
+    Strong International   Weak Regional/Domestic  -0.1441    0.0 -0.2275 -0.0607   True
+Strong Regional/Domestic       Weak International   0.0121 0.9973 -0.0627  0.0869  False
+Strong Regional/Domestic   Weak Regional/Domestic  -0.0515 0.3351 -0.1245  0.0216  False
+      Weak International   Weak Regional/Domestic  -0.0636 0.1788 -0.1412   0.014  False
+----------------------------------------------------------------------------------------
+Tukey HSD Test for CO2 Emissions per Capita by Themes
+                  Multiple Comparison of Means - Tukey HSD, FWER=0.05                  
+=======================================================================================
+         group1                   group2          meandiff p-adj   lower  upper  reject
+---------------------------------------------------------------------------------------
+   Green-Growth Critical               Non-Growth   0.5991 0.9902 -2.2047 3.4028  False
+   Green-Growth Critical     Strong International   4.1966 0.0103  0.6401 7.7531   True
+   Green-Growth Critical Strong Regional/Domestic    3.277 0.0433  0.0575 6.4966   True
+   Green-Growth Critical       Weak International   2.6633 0.2139 -0.7125  6.039  False
+   Green-Growth Critical   Weak Regional/Domestic   1.2668  0.886  -2.063 4.5966  False
+              Non-Growth     Strong International   3.5975 0.0018  0.9297 6.2653   True
+              Non-Growth Strong Regional/Domestic    2.678 0.0071  0.4794 4.8766   True
+              Non-Growth       Weak International   2.0642 0.1451 -0.3573 4.4857  False
+              Non-Growth   Weak Regional/Domestic   0.6677 0.9656 -1.6893 3.0247  False
+    Strong International Strong Regional/Domestic  -0.9196 0.9582 -4.0214 2.1823  False
+    Strong International       Weak International  -1.5333 0.7602  -4.797 1.7304  False
+    Strong International   Weak Regional/Domestic  -2.9298 0.0976 -6.1459 0.2863  False
+Strong Regional/Domestic       Weak International  -0.6137 0.9905 -3.5066 2.2791  False
+Strong Regional/Domestic   Weak Regional/Domestic  -2.0102 0.3292 -4.8493 0.8288  False
+      Weak International   Weak Regional/Domestic  -1.3965  0.771 -4.4115 1.6185  False
+---------------------------------------------------------------------------------------
+Tukey HSD Test for GDP per Capita by Themes
+                       Multiple Comparison of Means - Tukey HSD, FWER=0.05                        
+==================================================================================================
+         group1                   group2            meandiff  p-adj     lower      upper    reject
+--------------------------------------------------------------------------------------------------
+   Green-Growth Critical               Non-Growth   6771.2818 0.8395  -9446.6319 22989.1954  False
+   Green-Growth Critical     Strong International  26381.8665 0.0033   5977.4447 46786.2884   True
+   Green-Growth Critical Strong Regional/Domestic   7836.7974 0.8319 -10689.6251 26363.2199  False
+   Green-Growth Critical       Weak International    509.5493    1.0 -18886.6161 19905.7147  False
+   Green-Growth Critical   Weak Regional/Domestic   3119.5758 0.9972 -15903.5516 22142.7032  False
+              Non-Growth     Strong International  19610.5848 0.0031   4513.9734 34707.1961   True
+              Non-Growth Strong Regional/Domestic   1065.5156 0.9999 -11376.1713 13507.2025  False
+              Non-Growth       Weak International  -6261.7325  0.781 -19964.9611  7441.4962  False
+              Non-Growth   Weak Regional/Domestic  -3651.7059 0.9686 -16821.6194  9518.2075  False
+    Strong International Strong Regional/Domestic -18545.0691 0.0314  -36098.282  -991.8563   True
+    Strong International       Weak International -25872.3172  0.001 -44341.1608 -7403.4736   True
+    Strong International   Weak Regional/Domestic -23262.2907 0.0035 -41338.9698 -5185.6116   True
+Strong Regional/Domestic       Weak International  -7327.2481 0.7957 -23697.5286  9043.0324  False
+Strong Regional/Domestic   Weak Regional/Domestic  -4717.2215 0.9584 -20643.7474 11209.3043  False
+      Weak International   Weak Regional/Domestic   2610.0265 0.9979 -14320.3346 19540.3877  False
+--------------------------------------------------------------------------------------------------
+
+
+
+

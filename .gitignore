@@ -155,8 +155,6 @@ Thumbs.db
 virtual_environment/
 .venv
 *.pdf
-*.docx
-*.txt
 actual_datasets/
 .old/
 Icon
