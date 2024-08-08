@@ -1,0 +1,72 @@
+<View>
+  <!-- Main layout split: Left for text and right for details -->
+  <View style="display: flex; flex-direction: row;">
+    
+    <!-- Left Column for text and primary labeling -->
+    <View style="display:flex;align-items:start;gap:8px;flex-direction:column-reverse">
+      <Text name="text" value="$text"/>
+      <Header value="Label Categories of Growth"/>
+      <Labels name="growth_category" toName="text">
+        <Label value="Regional" background="green"/>
+        <Label value="Domestic" background="lightgreen"/>
+        <Label value="International" background="darkgreen"/>
+        <Label value="Unclassified" background="olive"/>
+      </Labels>
+      <Header value="Anti-Green Growth"/>
+      <Labels name="anti_growth_category" toName="text" showInline="true">
+        <Label value="Regional" background="red"/>
+        <Label value="Domestic" background="pink"/>
+        <Label value="International" background="maroon"/>
+        <Label value="Unclassified" background="coral"/>
+      </Labels>
+      <Header value=" Broad Discourses"/>
+      <Labels name="discourse_category" toName="text" showInline="true">
+        <Label value="Regional" background="blue"/>
+        <Label value="Domestic" background="violet"/>
+        <Label value="International" background="purple"/>
+        <Label value="Unclassified" background="turquoise"/>
+      </Labels>
+    </View>
+
+    <!-- Right Column for additional information and controls -->
+    <View style="flex: 1; margin-left: 10px;">
+        <Header value="Metadata" style="margin-bottom: 10px;"/>
+        <Text name="country_meta" value="$Country" style="margin-bottom: 5px;"/>
+        <Text name="language_meta" value="$Organisation" style="margin-bottom: 5px;"/>
+        <Text name="event_meta" value="$Event" style="margin-bottom: 5px;"/>
+        <Text name="part_event_meta" value="$Part_of_Event" style="margin-bottom: 5px;"/>
+        <Text name="date_meta" value="$classification" style="margin-bottom: 5px;"/>
+        <Text name="info_meta" value="$info" style="margin-bottom: 5px;"/>
+        <Text name="speech_name_meta" value="$Date" style="margin-bottom: 5px;"/>
+        <Text name="org_speaker_meta" value="$Language" style="margin-bottom: 5px;"/>
+      <Header value="Additional Information"/>
+      <View visibleWhen="selectedLabelValue" reference="growth_category" value="Regional">
+        <Header value="Specify Region"/>
+        <Choices name="region_specification" toName="text" perRegion="true">
+          <Choice value="North America"/>
+          <Choice value="South America"/>
+          <Choice value="Europe"/>
+          <Choice value="Asia"/>
+          <Choice value="Africa"/>
+          <Choice value="Australia"/>
+        <Choice value="LDC"/></Choices>
+      </View>
+
+      <View visibleWhen="selectedLabelValue" reference="growth_category" value="Domestic">
+        <Header value="Inclusion Principles for Domestic" perRegion="true"/>
+        <Choices name="domestic_inclusion" toName="text" perRegion="true" editable="true">
+          <Choice value="Principle A"/>
+          <Choice value="Principle B"/>
+        </Choices>
+      </View>
+
+      <!-- Omission of Speech Section -->
+      <Header value="Omit Entire Speech"/>
+      <Choices name="omit_speech" toName="text" choice="single">
+        <Choice value="Yes"/>
+        <Choice value="No"/>
+      </Choices>
+      <TextArea name="omit_reason" toName="text" visibleWhen="equals" reference="omit_speech" value="Yes" placeholder="Reason for omission"/>
+    </View>
+  </View>
+</View>

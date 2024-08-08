@@ -1,6 +1,7 @@
 This is a repository for some of my work for my Dissertation project.
 It is not an exhaustive account of all files that I used for analysis - but it contains key files used for statistical analysis alongside a complete dataset.
 If any furhter files are required for the marking process please contact me at calebmasters101@gmail.com
+This repository also includes further statistical analysis that was not elaborated in the dissertation due to word count limits.
 
 Understanding the dataset:
     The dataset can be found as `dataanlysis.csv` - it does not include any actual speech quotes. 
